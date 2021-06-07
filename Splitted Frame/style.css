@@ -1,0 +1,29 @@
+div {
+    width: 700px;
+    height: 500px;
+    margin: 50px auto;
+    background-image: linear-gradient(to right, #fff 50% , #343a40 50%);
+    position: relative;
+}
+div::before {
+    content: '';
+    position: absolute;
+    width: 365px;
+    height: 525px;
+    background: #343a40;
+    z-index: -1;
+    top: -13px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: -13px;
+}
+div img {
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
